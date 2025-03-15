@@ -1,3 +1,5 @@
+// Este archivo tiene la logica del algoritmo IDA*
+// Ademas, tiene procedimientos que imprimen un tablero con un estado, y que imprimen los resultados de la busqueda
 import java.util.*;
 public class IDAStar{
     // Tablero meta, n de estados generados, y conjunto de String para almacenar los vecinos ya visitados
