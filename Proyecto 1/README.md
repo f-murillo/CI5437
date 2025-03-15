@@ -3,7 +3,7 @@
 Franco Murillo - 1610782  
 Alejandro Zambrano - 1710684
 
-- El proyecto fue realizado en *Java*
+- El proyecto fue realizado en **Java**
 
 - El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15)
 
