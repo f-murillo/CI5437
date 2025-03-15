@@ -63,7 +63,7 @@ Alejandro Zambrano - 1710684
 
 - De esta forma, se redujo el número de estados generados. 
 
-- Sin embargo, esto no fue suficiente, por lo que se probó con asignar pesos a las heurísticas, esto es, multiplicando las heurísticas por un entero mayor que 1 (sabiendo el riesgo de aumentar aún más la longitud del camino obtenido). 
+- Sin embargo, esto no fue suficiente, por lo que se probó con asignar pesos a las heurísticas. Esto es, multiplicando las heurísticas por un entero mayor que 1 (asumiendo el riesgo de aumentar aún más la longitud del camino obtenido). 
 
 - Finalmente, se vió que la siguiente fórmula reduce enormemente el número de estados generados, y obtiene soluciones de longitud competitiva respecto a BA*:
   
