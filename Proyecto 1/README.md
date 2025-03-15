@@ -7,7 +7,7 @@ Alejandro Zambrano - 1710684
 
 - El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15)
 
-- El objetivo es poder computar la solución de las instancias propuestas en el artículo  de manera competitiva con respecto a la solución propuesta por éstos, que fue usar el algoritmo Bidirectional A* (BA*), haciendo uso de la heurística Hybrid Heuristic (HH), la cual es:  
+- El objetivo es poder computar la solución de las instancias propuestas en el artículo [1] de manera competitiva con respecto a la solución propuesta por éstos, que fue usar el algoritmo Bidirectional A* (BA*), haciendo uso de la heurística Hybrid Heuristic (HH), la cual es:  
 
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
@@ -16,7 +16,7 @@ Alejandro Zambrano - 1710684
 
 - El algoritmo escogido para el proyecto fue Iterative Deepening A* (__IDA*__), la cual establece un límite heurístico inicial (la heurística calculada sobre el estado inicial), y en cada iteración se realiza un recorrido DFS sobre los estados, actualizando el límite heurístico al final de cada iteración, hasta llegar al estado meta.
 
-- La función verifica si se llegó a la solución, si al hacer la llamada recursiva dfs, se obtiene como retorno -1 
+- La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1 
 
 - OBSERVACIÓN: el código de la solución fue hecho considerando el estado solución como todos los elementos ordenados de 1 a 15, con el último espacio ocupado con el espacio en blanco. Por esto, no funcionará para la tabla 3 del artículo de Hassan, pues dicha tabla de casos está hecha considerando la solución con el espacio en blanco al principio. 
 
