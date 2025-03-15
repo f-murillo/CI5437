@@ -63,7 +63,7 @@ HH = {4md(s) \over 3} + lc(s) + ct(s)
 ## Ejecución 
 
 ```
->java Puzzle15
+>java Main
 ```
 
 ## Ejemplo de uso
