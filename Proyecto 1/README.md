@@ -7,7 +7,7 @@ Alejandro Zambrano - 1710684
 
 - Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
 
-- El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15).
+- El programa pide al usuario una secuencia de 16 números, separadas por un espacio, del 0 al 15. Se asume que la secuencia ingresada es correcta.
 
 - El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (__BA*__), haciendo uso de la heurística Hybrid Heuristic (HH):  
 
