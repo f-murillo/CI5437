@@ -5,6 +5,18 @@ Alejandro Zambrano - 1710684
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+## Qué es el 15-puzzle
+
+- El 15-puzzle es un problema matemático que consta de un tablero 4x4, con una configuración de piezas enumeradas del 1 al 15, y se tiene un espacio en blanco.
+
+- El objetivo es ir moviendo las piezas hacia el espacio en blanco, hasta llegar a una configuración meta establecida.
+
+- Por ejemplo:
+
+  ![Ejemplo de configuración inicial y configuración meta](https://media.geeksforgeeks.org/wp-content/uploads/15-puzzle.png)
+
+## Sobre el Proyecto
+
 - El proyecto fue realizado en **Java**.
 
 - Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
