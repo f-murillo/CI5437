@@ -16,17 +16,9 @@ public class Main{
             }
         }
 
-        // Tablero meta (ordenado del 1 al 15, con el espacio blanco al final)
-        int[][] goalBoard ={
-            {1,2,3,4}, 
-            {5,6,7,8}, 
-            {9,10,11,12}, 
-            {13,14,15,0} 
-        };
-
         // Instancias del tablero inicial y del solver
         Puzzle puzzle = new Puzzle(initialBoard);
-        IDAStar solver = new IDAStar(goalBoard);
+        IDAStar solver = new IDAStar(puzzle.getGoalBoard());
 
         if(!solver.solve(puzzle)) // Si no se logro encontrar solucion
             System.out.println("No hay solucion para el puzzle.");
