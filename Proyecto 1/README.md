@@ -27,7 +27,7 @@ Alejandro Zambrano - 1710684
 >[!NOTE]
 > En el archivo "pruebas.txt" se encontrarán todos los casos de prueba que se sacaron de [1], así como los casos usados para la evaluación del proyecto.
  
-- La idea original era la de usar la propia heurística HH sobre el algoritmo IDA*, sin embargo, se vió que, si bien se obtenía soluciones de longitud óptima, la generación de estados y el tiempo de obtención de respuesta no eran óptimos, tardando hasta varios minutos en computar una solución. 
+- La idea original era la de usar la propia heurística HH sobre el algoritmo IDA*, sin embargo, se vió que, si bien se obtenía soluciones de longitud óptima, el número de estados generados y el tiempo de respuesta no eran óptimos, tardando hasta varios minutos en computar una solución. 
 
 - Por esto, se investigó sobre distintas heurísticas, hasta que se encontró la heurística Corner-Tile en el artículo [[2]](#bibliografía), que habla sobre el 24-puzzle, la cual considera lo siguiente:
 
