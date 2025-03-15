@@ -7,7 +7,7 @@ Alejandro Zambrano - 1710684
 
 - El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15)
 
-- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (BA*), haciendo uso de la heurística Hybrid Heuristic (HH):  
+- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (__BA*__), haciendo uso de la heurística Hybrid Heuristic (HH):  
 
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
