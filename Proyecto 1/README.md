@@ -7,7 +7,7 @@ Alejandro Zambrano - 1710684
 
 ## Qué es el 15-puzzle
 
-- El 15-puzzle es un problema matemático que consta de un tablero 4x4, con una configuración de piezas enumeradas del 1 al 15, y se tiene un espacio en blanco.
+- El 15-puzzle es un problema matemático que consta de un tablero 4x4, con una configuración de piezas enumeradas del 1 al 15, y un espacio en blanco.
 
 - El objetivo es ir moviendo las piezas hacia el espacio en blanco, hasta llegar a una configuración meta establecida.
 
