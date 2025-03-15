@@ -43,9 +43,9 @@ Alejandro Zambrano - 1710684
 >[!NOTE]
 > En el archivo "pruebas.txt" se encontrarán todos los casos de prueba que se sacaron de [1], así como los casos usados para la evaluación del proyecto.
  
-- La idea original era la de usar la heurística HH sobre el algoritmo IDA*; sin embargo, se vió que, si bien se obtenía soluciones de longitud óptima, el número de estados generados y el tiempo de respuesta no eran óptimos, generando un número enorme de estados, y tardando hasta varios minutos en computar una solución. 
+- La idea original era la de usar la heurística HH sobre el algoritmo IDA*; sin embargo, se vió que, si bien se obtenía soluciones de longitud óptima, el número de estados generados y el tiempo de respuesta no eran óptimos (genera un número enorme de estados, y puede tomar hasta varios minutos en encontrar una solución). 
 
-- Por esto, se investigó sobre distintas heurísticas, hasta que se encontró la heurística Corner-Tile en el artículo [[2]](#bibliografía), que habla sobre el 24-puzzle, y que considera lo siguiente:
+- Por esto, se investigó sobre distintas heurísticas, hasta que se encontró la heurística **Corner-Tile** en el artículo [[2]](#bibliografía), que habla sobre el 24-puzzle, y que considera lo siguiente:
 
     - En el problema del n-puzzle, las piezas más complicadas de ubicar en la solución son las esquinas.
     - Luego, la heurística Corner-Tile verifica si las casillas en las esquinas de un estado corresponden a las esquinas de la solución.
