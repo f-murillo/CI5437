@@ -3,6 +3,8 @@
 Franco Murillo - 1610782  
 Alejandro Zambrano - 1710684
 
+----------------------------------------------------------------------------------------------------------------------------
+
 - El proyecto fue realizado en **Java**.
 
 - Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
@@ -54,6 +56,8 @@ Alejandro Zambrano - 1710684
 ```math
 HH = {4md(s) \over 3} + lc(s) + ct(s) 
 ```
+
+----------------------------------------------------------------------------------------------------------------------------
 
 ## Compilación del programa (teniendo instalado JDK 17 en adelante)
 
