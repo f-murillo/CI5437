@@ -54,7 +54,7 @@ Alejandro Zambrano - 1710684
 - Se encontró que, para la tabla 3 de [[1]](#bibliografía), es mejor sumar 2 a dicha heurística; mientras que para la tabla 4, es mejor sumar 4 (por defecto, se decidió dejarlo sumando 4).
 - Hay que tomar en cuenta que, al agregar esta heurística, se reduce el número de estados generados, pero aumenta ligeramente el número de pasos a la solución.
 
-- Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, quedando la fórmula HH de la siguiente manera:
+- Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, obteniendo la siguiente fórmula HH:
     ```math
       HH = {md(s) \over 3} + lc(s) + ct(s) 
     ```
