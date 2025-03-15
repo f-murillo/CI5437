@@ -5,7 +5,7 @@ Alejandro Zambrano - 1710684
 
 - El proyecto fue realizado en **Java**.
 
-- Se modularizó el código para una mejor comprehensión y una mayor facilidad para su implementación.
+- Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
 
 - El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15).
 
