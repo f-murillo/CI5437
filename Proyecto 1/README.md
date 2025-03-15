@@ -7,7 +7,7 @@ Alejandro Zambrano - 1710684
 
 - El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15)
 
-- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta por éstos, que fue usar el algoritmo Bidirectional A* (BA*), haciendo uso de la heurística Hybrid Heuristic (HH), la cual es:  
+- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (BA*), haciendo uso de la heurística Hybrid Heuristic (HH):  
 
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
@@ -27,13 +27,13 @@ Alejandro Zambrano - 1710684
  
 - La idea original era la de usar la propia heurística HH sobre el algoritmo IDA*, sin embargo, se vió que, si bien se obtenía soluciones de longitud óptima, la generación de estados y el tiempo de obtención de respuesta no eran óptimos, tardando hasta varios minutos en computar una solución. 
 
-- Por esto, se investigó sobre distintas heurísticas, hasta que se encontró con la heurística Corner-Tile en el artículo [[2]](#bibliografía) que habla sobre el 24-puzzle, la cual considera lo siguiente:
+- Por esto, se investigó sobre distintas heurísticas, hasta que se encontró la heurística Corner-Tile en el artículo [[2]](#bibliografía), que habla sobre el 24-puzzle, la cual considera lo siguiente:
 
     - En el problema del n-puzzle, las piezas más complicadas de ubicar en la solución son las esquinas.
     - Luego, la heurística Corner-Tile verifica si las casillas en las esquinas de un estado corresponden a las esquinas de la solución.
     - Si no lo están, suman un valor extra a la heurística de dichas casillas, dándoles una prioridad sobre las demás casillas.
     - De esta manera, el algoritmo va guiándose a través de aquellos estados donde las esquinas estén más próximas a estar en su lugar.
-    - Se encontró que, para la primera tabla de [1], es mejor sumar 2 a la heurística; mientras que para la segunda tabla, es mejor sumar 4.
+    - Se encontró que, para la primera tabla de [[1]](#bibliografía), es mejor sumar 2 a la heurística; mientras que para la segunda tabla, es mejor sumar 4.
     - Hay que tomar en cuenta que, al agregar esta heurística, se reduce el número de estados generados, pero aumenta ligeramente el número de pasos a la solución.
 
 - Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, quedando la fórmula HH de la siguiente manera:
