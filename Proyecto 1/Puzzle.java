@@ -9,7 +9,7 @@ public class Puzzle{
     // Tablero, fila y columna donde esta el espacio en blanco y el predecesor del tablero (padre)
     private int[][] board;
     // Tablero meta (ordenado del 1 al 15, con el espacio blanco al final)
-    private int[][] goalBoard ={
+    private int[][] goalBoard = {
             {1,2,3,4}, 
             {5,6,7,8}, 
             {9,10,11,12}, 
