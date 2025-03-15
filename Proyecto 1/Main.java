@@ -1,3 +1,5 @@
+// Este archivo se encarga de ejecutar el programa
+// Establece el tablero meta, pide al usuario que ingrese una secuencia de numeros, crea las instancias de IDA* y el tablero, e imprime los resultados
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
