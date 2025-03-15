@@ -30,11 +30,11 @@ Alejandro Zambrano - 1710684
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
 ```
-- donde:  md = Manhattan Distance; wd = Walking Distance; lc = Linear Conflict
+- donde:  md = Manhattan Distance; wd = Walking Distance; lc = Linear Conflict (ver funcionamiento de las heursísticas en [[1]](#bibliografía)).
 
 - El algoritmo escogido para el proyecto fue Iterative Deepening A* (__IDA*__), la cual establece un límite heurístico al principio (la heurística calculada sobre el estado inicial), y en cada iteración se realiza un recorrido DFS sobre los estados, actualizando el límite heurístico, hasta llegar al estado meta.
 
-- La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1 
+- La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1
 
 - OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha). Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos considera la solución con el espacio en blanco al principio (arriba y a la izquierda). 
 
