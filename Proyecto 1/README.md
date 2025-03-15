@@ -3,9 +3,11 @@
 Franco Murillo - 1610782  
 Alejandro Zambrano - 1710684
 
-- El proyecto fue realizado en **Java**
+- El proyecto fue realizado en **Java**.
 
-- El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15)
+- Se modularizó el código para una mejor comprehensión y una mayor facilidad para su implementación.
+
+- El programa asume que la entrada es correcta (esto es, una secuencia de 16 números, cada uno separado por un espacio, del 0 al 15).
 
 - El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (__BA*__), haciendo uso de la heurística Hybrid Heuristic (HH):  
 
