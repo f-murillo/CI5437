@@ -52,7 +52,7 @@ public class Heuristica{
         return conflict;
     }
         
-    // Funcion que calcula la Corner-Tile Heuristic
+    // Funcion que calcula la heuristica Corner-Tile 
     public static int cornerTileHeuristic(int[][] board, int[][] goal){
         int heuristic = 0;
             
