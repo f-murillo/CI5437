@@ -14,7 +14,7 @@ Alejandro Zambrano - 1710684
 ```
 - donde:  md = Manhattan Distance; wd = Walking Distance; lc = Linear Conflict
 
-- El algoritmo escogido para el proyecto fue Iterative Deepening A* (IDA*), la cual establece un límite heurístico inicial (la heurística calculada sobre el estado inicial), y en cada iteración se realiza un recorrido DFS sobre los estados, actualizando el límite heurístico al final de cada iteración, hasta llegar al estado meta.
+- El algoritmo escogido para el proyecto fue Iterative Deepening A* (__IDA*__), la cual establece un límite heurístico inicial (la heurística calculada sobre el estado inicial), y en cada iteración se realiza un recorrido DFS sobre los estados, actualizando el límite heurístico al final de cada iteración, hasta llegar al estado meta.
 
 - La función verifica si se llegó a la solución, si al hacer la llamada recursiva dfs, se obtiene como retorno -1 
 
