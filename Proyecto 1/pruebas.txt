@@ -1,4 +1,4 @@
-Casos del artículo "The Fifteen Puzzle—A New Approach through Hybridizing Three Heuristics Methods"
+Casos de prueba del artículo "The Fifteen Puzzle—A New Approach through Hybridizing Three Heuristics Methods"
 
 Tabla 3
 
