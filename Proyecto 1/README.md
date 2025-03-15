@@ -38,14 +38,20 @@ Alejandro Zambrano - 1710684
 
 - Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, quedando la fórmula HH de la siguiente manera:
     ```math
-      HH = (md(s)/3) + lc(s) + ct(s), donde: ct = Corner-Tile
+      HH = {md(s) \over 3} + lc(s) + ct(s) 
     ```
-- De esta forma, se redujo bastante el número de estados generados. 
+    
+- donde: ct = Corner-Tile
 
-- Sin embargo, no fue suficiente, por lo que se probó con asignar pesos a las heurísticas, esto es, multiplicando las heurísticas por un entero mayor que 1 (sabiendo el riesgo de alargar aún más la longitud del camino obtenido). 
+- De esta forma, se redujo el número de estados generados. 
 
-- Se vió que la fórmula HH = 4*(md(s)/3) + lc(s) + ct(s) reduce enormemente el número de estados generados, y obtiene soluciones de longitud competitiva respecto a BA*.
+- Sin embargo, esto no fue suficiente, por lo que se probó con asignar pesos a las heurísticas, esto es, multiplicando las heurísticas por un entero mayor que 1 (sabiendo el riesgo de aumentar aún más la longitud del camino obtenido). 
 
+- Se vió que la siguiente fórmula reduce enormemente el número de estados generados, y obtiene soluciones de longitud competitiva respecto a BA*:
+  
+```math
+HH = {4md(s) \over 3} + lc(s) + ct(s) 
+```
 
 ## Compilación del programa (teniendo instalado JDK 17 en adelante)
 
