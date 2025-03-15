@@ -20,7 +20,7 @@ Alejandro Zambrano - 1710684
 
 - La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1 
 
-- OBSERVACIÓN: el código de la solución fue hecho considerando el estado solución como todos los elementos ordenados de 1 a 15, con el último espacio ocupado con el espacio en blanco. Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos está hecha considerando la solución con el espacio en blanco al principio. 
+- OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha). Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos está hecha considerando la solución con el espacio en blanco al principio. 
 
 - Así, el código funciona correctamente para las  tablas 3 y 4 de [[1]](#bibliografía), con la observación de que en la tabla 4, los primeros 11 casos están hechos considerando la solución con el espacio en blanco al principio, por lo que debe ser probado a partir del caso 12 hasta el 28.
 
