@@ -86,6 +86,6 @@ Numero de estados generados: 1
 
 ## Bibliografía
 
-[1] - The Fifteen Puzzle - A New Approach through Hybridizing Three Heuristics Methods. Hasan, Talabani, Mirjalili. 2023
+[1] - The Fifteen Puzzle - A New Approach through Hybridizing Three Heuristics Methods. Hasan, Aladdin, Talabani, Mirjalili. 2023
 
 [2] - Finding Optimal Solutions to the Twenty-Four Puzzle. Korf, Taylor. 1996
