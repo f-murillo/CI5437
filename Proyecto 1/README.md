@@ -15,6 +15,8 @@ Alejandro Zambrano - 1710684
 
   ![Ejemplo de configuración inicial y configuración meta](https://media.geeksforgeeks.org/wp-content/uploads/15-puzzle.png)
 
+  ----------------------------------------------------------------------------------------------------------------------------
+
 ## Sobre el Proyecto
 
 - El proyecto fue realizado en **Java**.
