@@ -1,3 +1,5 @@
+// Este archivo tiene las funciones heuristicas usadas para resolver el problema
+// Calcula las heuristicas manhattanDistance, linearConflict, cornerTile, y HH
 public class Heuristica{
     // Funcion que calcula la heuristica distancia Manhattan
     public static int manhattanDistance(int[][] board, int[][] goal){
