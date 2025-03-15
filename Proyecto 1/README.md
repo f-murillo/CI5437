@@ -12,7 +12,7 @@ Alejandro Zambrano - 1710684
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
 ```
-<br/>donde:  md = Manhattan Distance; wd = Walking Distance; lc = Linear Conflict
+- donde:  md = Manhattan Distance; wd = Walking Distance; lc = Linear Conflict
 
 - El algoritmo escogido para el proyecto fue Iterative Deepening A* (IDA*), la cual establece un límite heurístico inicial (la heurística calculada sobre el estado inicial), y en cada iteración se realiza un recorrido DFS sobre los estados, actualizando el límite heurístico al final de cada iteración, hasta llegar al estado meta.
 
