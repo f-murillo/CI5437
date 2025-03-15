@@ -1,3 +1,9 @@
+// Este archivo contiene la logica del 15-puzzle
+// Crea el tablero, obtiene los estados, realiza los movimientos para obtener estados vecinos, y copia estados
+/* Es posible adaptarlo para tener un solver para el N-Puzzle. Hay que tener en cuenta que se tendría que 
+    cambiar el tablero meta en el archivo Main.java, y dependiendo del N, se tendria que considerar 
+    modificar o no las heuristicas
+*/
 import java.util.*;
 public class Puzzle{
     // Tablero, fila y columna donde esta el espacio en blanco y el predecesor del tablero (padre)
