@@ -7,7 +7,14 @@
 import java.util.*;
 public class Puzzle{
     // Tablero, fila y columna donde esta el espacio en blanco y el predecesor del tablero (padre)
-    private int[][] board; 
+    private int[][] board;
+    // Tablero meta (ordenado del 1 al 15, con el espacio blanco al final)
+    private int[][] goalBoard ={
+            {1,2,3,4}, 
+            {5,6,7,8}, 
+            {9,10,11,12}, 
+            {13,14,15,0} 
+    };
     private int blankRow;
     private int blankCol;
     private Puzzle parent;
@@ -40,6 +47,11 @@ public class Puzzle{
         return board;
     }
 
+    // Funcion que obtiene el tablero meta
+    public int[][] getGoalBoard(){
+        return goalBoard;
+    }
+    
     // Funcion que obtiene el padre de un estado
     public Puzzle getParent(){
         return parent;
