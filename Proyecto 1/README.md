@@ -11,7 +11,7 @@ Alejandro Zambrano - 1710684
 
 - El objetivo es ir moviendo las piezas hacia el espacio en blanco, hasta llegar a una configuración meta establecida.
 
-- Por ejemplo:
+- Ejemplo:
 
   ![Ejemplo de configuración inicial y configuración meta](https://media.geeksforgeeks.org/wp-content/uploads/15-puzzle.png)
 
