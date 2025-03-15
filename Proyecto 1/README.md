@@ -37,9 +37,9 @@ Alejandro Zambrano - 1710684
     - Hay que tomar en cuenta que, al agregar esta heurística, se reduce el número de estados generados, pero aumenta ligeramente el número de pasos a la solución.
 
 - Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, quedando la fórmula HH de la siguiente manera:
-    
-    - HH = (md(s)/3) + lc(s) + ct(s), donde: ct = Corner-Tile
-
+    ```math
+      HH = (md(s)/3) + lc(s) + ct(s), donde: ct = Corner-Tile
+    ```
 - De esta forma, se redujo bastante el número de estados generados. 
 
 - Sin embargo, no fue suficiente, por lo que se probó con asignar pesos a las heurísticas, esto es, multiplicando las heurísticas por un entero mayor que 1 (sabiendo el riesgo de alargar aún más la longitud del camino obtenido). 
