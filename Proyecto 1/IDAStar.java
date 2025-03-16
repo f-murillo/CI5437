@@ -20,14 +20,14 @@ public class IDAStar{
         
         while(true){
             int temp = dfs(puzzle, 0, limit); // Llamada a la funcion recursiva
-
-            if(temp == -1) // Si el retorno de dfs es -1, se obtuvo la solucion
+            // Si el retorno de dfs es -1, se obtuvo la solucion
+            if(temp == -1) 
                 return true; 
-            
-            if(temp == Integer.MAX_VALUE) // Si es el maximo valor definido para un entero, no se encontro solucion
-                return false; 
-            
-            limit = temp; // Se actualiza el limite
+            // Si es el maximo valor definido para un entero, no se encontro solucion
+            if(temp == Integer.MAX_VALUE) 
+                return false;
+            // Se actualiza el limite
+            limit = temp; 
         }
     }
 
