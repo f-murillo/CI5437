@@ -53,11 +53,11 @@ public class IDAStar{
             if(!visited.contains(neighborString)){ // Si el estado no ha sido visitado
                 generatedStates++; // Se aumenta el numero de estados generados
                 int temp = dfs(neighbor, g + 1, limit); // Llamada recursiva
-
-                if(temp == -1) // Si el  valor de retorno es -1, se encontro la solucion. Retorna -1 a solve
+                // Si el  valor de retorno es -1, se encontro la solucion. Retorna -1 a solve
+                if(temp == -1) 
                     return -1;
-                
-                if(temp < min) // Si el valor de retorno es menor que min, se establece el nuevo min
+                 // Si el valor de retorno es menor que min, se establece el nuevo min
+                if(temp < min)
                     min = temp;
             }
         }
