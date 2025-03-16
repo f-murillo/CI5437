@@ -8,7 +8,7 @@ public class Heuristica{
             for(int j = 0; j < 4; j++){
                 int value = board[i][j]; // Casilla actual
                 if(value != 0){ // Si la casilla no es el espacio en blanco
-                        // Se calcula la distancia entre la casilla actual y la casilla objetivo
+                    // Se calcula la distancia entre la casilla actual y la casilla objetivo
                     int goalRow = (value - 1) / 4;
                     int goalCol = (value - 1) % 4;
                     distance += Math.abs(i - goalRow) + Math.abs(j - goalCol);
