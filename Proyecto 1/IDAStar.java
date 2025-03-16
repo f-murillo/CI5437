@@ -17,7 +17,6 @@ public class IDAStar{
     // Funcion que verifica si el problema tiene solucion
     public boolean solve(Puzzle puzzle){
         int limit = Heuristica.hybridHeuristic(puzzle.getBoard(), goalBoard); // Limite de heuristic (inicialmente la heuristica del estado inicial)
-        
         while(true){
             int temp = dfs(puzzle, 0, limit); // Llamada a la funcion recursiva
             // Si el retorno de dfs es -1, se obtuvo la solucion
