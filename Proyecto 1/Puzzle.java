@@ -1,6 +1,6 @@
 // Este archivo contiene la logica del 15-puzzle
 // Crea el tablero, obtiene los estados, realiza los movimientos para obtener estados vecinos, y copia estados
-/* Es posible adaptarlo para tener un solver para el N-Puzzle. Hay que tener en cuenta que se tendría que 
+/* Es posible adaptar el archivo para tener un solver para el N-Puzzle. Hay que tener en cuenta que se tendría que 
     cambiar la longitud de la secuencia a pedir al usuario en el archivo Main.java; y dependiendo del N, se 
     tendria que considerar modificar o no las heuristicas
 */
