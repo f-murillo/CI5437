@@ -69,10 +69,9 @@ public class Heuristica{
             int currentRow = corner[0];
             int currentCol = corner[1];
             // Si la pieza en la posicion de la esquina está fuera de lugar respecto al tablero objetivo
-            if (board[currentRow][currentCol] != goal[currentRow][currentCol]){
+            if (board[currentRow][currentCol] != goal[currentRow][currentCol])
                 // Se asigna un costo para las piezas que están fuera de lugar en las esquinas 
                 heuristic += 4; 
-            }
         }
         return heuristic;
     }
