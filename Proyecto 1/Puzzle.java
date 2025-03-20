@@ -13,7 +13,7 @@ public class Puzzle{
     private Puzzle parent;
     
     // Tablero meta (ordenado del 1 al 15, con el espacio blanco al final)
-    private int[][] goalBoard = {
+    private int[][] goalBoard ={
             {1,2,3,4}, 
             {5,6,7,8}, 
             {9,10,11,12}, 
