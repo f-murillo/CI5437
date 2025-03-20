@@ -8,6 +8,10 @@ import java.util.*;
 public class Puzzle{
     // Tablero, fila y columna donde esta el espacio en blanco y el predecesor del tablero (padre)
     private int[][] board;
+    private int blankRow;
+    private int blankCol;
+    private Puzzle parent;
+    
     // Tablero meta (ordenado del 1 al 15, con el espacio blanco al final)
     private int[][] goalBoard = {
             {1,2,3,4}, 
@@ -15,10 +19,7 @@ public class Puzzle{
             {9,10,11,12}, 
             {13,14,15,0} 
     };
-    private int blankRow;
-    private int blankCol;
-    private Puzzle parent;
-
+    
     // Constructor del tablero inicial
     public Puzzle(int[][] initialBoard){
         this.board = initialBoard;
