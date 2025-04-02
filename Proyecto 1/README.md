@@ -29,7 +29,7 @@ Alejandro Zambrano - 1710684
 
 - A partir de dicha secuencia, se crea el tablero, así como las instancias correspondientes para hallar la solución.
   
-- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en éste, la cual fue usar el algoritmo Bidirectional A* (__BA*__), haciendo uso de la heurística Hybrid Heuristic (HH):  
+- El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en éste, que fue usar el algoritmo Bidirectional A* (__BA*__,  la cual aplica una búsqueda A* desde el estado inicial y el estado final, hasta que ambas búsquedas se encuentren en un punto intermedio), y haciendo uso de la heurística Hybrid Heuristic (HH):  
 
 ```math
     HH = {md(s) \over 3} + wd(s) + lc(s)   
