@@ -40,7 +40,7 @@ Alejandro Zambrano - 1710684
 
 - La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1.
 
-- OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha).
+- OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha, como en la imagen presentada antes).
   - Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos considera la solución con el espacio en blanco al principio (arriba y a la izquierda).
   - Además, se asume que la secuencia ingresada (que representa un tablero) tiene solución. Esto, porque IDA* es un __algoritmo completo__, es decir, garantiza que encontrará una solución, si ésta existe.
   - Por lo que, si se ingresa una configuración que no tiene solución, se ejecutará el programa hasta que el contador de estados generados supere al máximo entero que puede representarse en Java (2.147.483.647).
