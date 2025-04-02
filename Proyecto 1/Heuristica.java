@@ -57,12 +57,10 @@ public class Heuristica{
     // Funcion que calcula la heuristica Corner-Tile 
     public static int cornerTileHeuristic(int[][] board, int[][] goal){
         int heuristic = 0;
-            
-        // Definimos las posiciones de las esquinas del tablero
+        // Posiciones de las esquinas del tablero
         int[][] cornerPositions ={
             {0, 0}, {0, 3}, {3, 0}, {3, 3}
         };
-            
         // Para cada esquina del tablero
         for(int[] corner : cornerPositions){
             // Posicion de la esquina actual
@@ -70,7 +68,6 @@ public class Heuristica{
             int currentCol = corner[1];
             // Si la pieza en la posicion de la esquina está fuera de lugar respecto al tablero objetivo
             if (board[currentRow][currentCol] != goal[currentRow][currentCol])
-                // Se asigna un costo para las piezas que están fuera de lugar en las esquinas 
                 heuristic += 4; 
         }
         return heuristic;
