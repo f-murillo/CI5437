@@ -81,9 +81,9 @@ public class Puzzle{
         int[] rowMoves ={-1, 1, 0, 0};
         int[] colMoves ={0, 0, -1, 1};
 
-        // Ciclo que calcula cada posible movimiento de la casilla blanca, crea un nuevo tablero, y lo agrega a la cola de vecinos
+        // Se calcula cada posible movimiento de la casilla blanca, crea un nuevo tablero, y lo agrega a la cola de vecinos
         for(int k = 0; k < 4; k++){
-            // Se calcula las posiciones de fila y columna que puede tener el espacio en blanco
+            // Posiciones de fila y columna que puede tener el espacio en blanco
             int newRow = blankRow + rowMoves[k];
             int newCol = blankCol + colMoves[k];
             if(newRow >= 0 && newRow < 4 && newCol >= 0 && newCol < 4){ // Si la fila y columna calculadas estan en el rango de la matriz
