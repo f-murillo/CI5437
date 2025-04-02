@@ -57,7 +57,7 @@ Alejandro Zambrano - 1710684
     - La heurística verifica si las casillas en las esquinas de un estado corresponden a las esquinas de la solución.
     - Si no lo están, suman un valor extra a la heurística de dichas casillas, dándoles una prioridad sobre las demás casillas.
 - De esta manera, el algoritmo va guiándose a través de aquellos estados donde las esquinas estén más próximas a estar en su lugar.
-- Se encontró que, para la tabla 3 de [[1]](#bibliografía), es mejor sumar 2 a dicha heurística; mientras que para la tabla 4, es mejor sumar 4 (por defecto, se decidió dejarlo sumando 4).
+- OBSERVACIÓN: se vio que, para la tabla 3 de [[1]](#bibliografía), es mejor sumar 2 a dicha heurística; mientras que para la tabla 4, es mejor sumar 4 (por defecto, se decidió dejarlo sumando 4).
 - Hay que tomar en cuenta que, al agregar esta heurística, se reduce el número de estados generados, pero aumenta ligeramente el número de pasos a la solución.
 
 - Así, se sustituyó la heurística Walking Distance por la heurística Corner-Tile, obteniendo la siguiente fórmula HH:
