@@ -41,7 +41,8 @@ Alejandro Zambrano - 1710684
 - OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha).
   - Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos considera la solución con el espacio en blanco al principio (arriba y a la izquierda).
   - Además, se asume que la secuencia ingresada (que representa un tablero) tiene solución. Esto, porque IDA* es un __algoritmo completo__, es decir, garantiza que encontrará una solución, si existe.
-  - Por lo que, si se ingresa una configuración que no tiene solución, se ejecutará el programa hasta que el contador de estados generados supere al máximo entero que puede representarse en Java (2.147.483.647). 
+  - Por lo que, si se ingresa una configuración que no tiene solución, se ejecutará el programa hasta que el contador de estados generados supere al máximo entero que puede representarse en Java (2.147.483.647).
+  - Esto se puede solucionar implementando una función que verifique la paridad del tablero antes de intentar hallar la solución (pronto agraré una sección que hable sobre la paridad de un tablero), o simplemente agregando un contador máximo para los estados generados, o un temporizador para hallar la solución (en un futuro se probarán ambas alternativas también). 
 
 - Así, el código funciona correctamente para las  tablas 3 y 4 de [[1]](#bibliografía), con la observación de que en la tabla 4, los primeros 11 casos están hechos considerando la solución con el espacio en blanco al principio, por lo que debe ser probado a partir del caso 12 hasta el 28.
 
