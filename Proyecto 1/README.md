@@ -56,8 +56,8 @@ Alejandro Zambrano - 1710684
 - Por esto, se investigó sobre distintas heurísticas, hasta que se encontró la heurística **Corner-Tile** en el artículo [[2]](#bibliografía), que habla sobre el 24-puzzle, y que considera lo siguiente:
 
     - En el problema del n-puzzle, las piezas más complicadas de ubicar en la solución son las esquinas.
-    - La heurística verifica si las casillas en las esquinas de un estado corresponden a las esquinas de la solución.
-    - Si no lo están, suman un valor extra a la heurística de dichas casillas, dándoles una prioridad sobre las demás casillas.
+    - La heurística verifica si las casillas en las esquinas de un estado corresponden a las casillas en las esquinas de la solución.
+    - Si no corresponden, suman un valor extra a la heurística de dichas casillas, dándoles una prioridad sobre las demás casillas.
 - De esta manera, el algoritmo va guiándose a través de aquellos estados donde las esquinas estén más próximas a estar en su lugar.
 - OBSERVACIÓN: se vio que, para la tabla 3 de [[1]](#bibliografía), es mejor sumar 2 a dicha heurística; mientras que para la tabla 4, es mejor sumar 4 (por defecto, se decidió dejarlo sumando 4).
 - Hay que tomar en cuenta que, al agregar esta heurística, se reduce el número de estados generados, pero aumenta ligeramente el número de pasos a la solución.
