@@ -44,7 +44,7 @@ public class IDAStar{
         String boardString = Arrays.deepToString(puzzle.getBoard()); // Convertimos el tablero en un String 
         visited.add(boardString); // Se agrega el tablero al conjunto de visitados
         int min = Integer.MAX_VALUE; // Para compararlo con los valores de f de los estados vecinos
-        PriorityQueue<Puzzle> neighbors = puzzle.getNeighbors(goalBoard); // Se obtienen los estados vecinos
+        PriorityQueue<Puzzle> neighbors = puzzle.getNeighbors(goalBoard); // Estados vecinos
     
         while(!neighbors.isEmpty()){ // Mientras la cola de vecinos no este vacia
             Puzzle neighbor = neighbors.poll(); // Se desencola el primer vecino (que por como se definio la cola, es la de menor heuristica)
