@@ -23,7 +23,9 @@ Alejandro Zambrano - 1710684
 
 - Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
 
-- El programa pide al usuario ingresar una secuencia de 16 números, del 0 al 15, separadas por un espacio. Se asume que la secuencia ingresada es correcta.
+- El programa pide al usuario ingresar una secuencia de 16 números, del 0 al 15, separadas por un espacio.
+  
+- Se asume que la secuencia ingresada es correcta.
 
 - El objetivo es poder computar la solución de las instancias propuestas en el artículo [[1]](#bibliografía) de manera competitiva con respecto a la solución propuesta en ésta, la cual fue usar el algoritmo Bidirectional A* (__BA*__), haciendo uso de la heurística Hybrid Heuristic (HH):  
 
@@ -36,7 +38,7 @@ Alejandro Zambrano - 1710684
 
 - La función verifica si se llegó a la solución, si al hacer la llamada recursiva que usa DFS, se obtiene como retorno -1
 
-- OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha). Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos considera la solución con el espacio en blanco al principio (arriba y a la izquierda). 
+- OBSERVACIÓN: el código fue hecho considerando la solución como todos los números ordenados de 1 a 15, y con el el espacio en blanco al final (abajo y a la derecha). Por esto, no funcionará para la tabla 6 de [[1]](#bibliografía), pues dicha tabla de casos considera la solución con el espacio en blanco al principio (arriba y a la izquierda). Además, se asume que la secuencia ingresada (que representa un tablero) tiene solución. Esto, porque IDA* es un __algoritmo completo__, es decir, garantiza que encontrará una solución, si existe. Por esta razón, si se ingresa una configuración que no tiene solución, se ejecutará el programa hasta que el contador de estados generados supere al máximo entero que puede representarse en Java (2.147.483.647). 
 
 - Así, el código funciona correctamente para las  tablas 3 y 4 de [[1]](#bibliografía), con la observación de que en la tabla 4, los primeros 11 casos están hechos considerando la solución con el espacio en blanco al principio, por lo que debe ser probado a partir del caso 12 hasta el 28.
 
