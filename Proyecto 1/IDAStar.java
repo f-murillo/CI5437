@@ -22,7 +22,7 @@ public class IDAStar{
             // Si el retorno de dfs es -1, se obtuvo la solucion
             if(temp == -1) 
                 return true; 
-            // Si es el maximo valor definido para un entero, no se encontro solucion
+            // Si es el maximo valor definido para un entero, no se encontro solucion (realmente nunca se llega a este punto)
             if(temp == Integer.MAX_VALUE) 
                 return false;
             // Se actualiza el limite
