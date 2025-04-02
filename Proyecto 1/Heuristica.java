@@ -55,7 +55,7 @@ public class Heuristica{
     }
         
     // Funcion que calcula la heuristica Corner-Tile 
-    public static int cornerTileHeuristic(int[][] board, int[][] goal){
+    public static int cornerTile(int[][] board, int[][] goal){
         int heuristic = 0;
         // Posiciones de las esquinas del tablero
         int[][] cornerPositions ={
@@ -75,6 +75,6 @@ public class Heuristica{
         
     // Funcion que retorna la formula Hybride Heuristic (HH) (modficada, se cambio wd por ct, y se multiplico md por 4) 
     public static int hybridHeuristic(int[][] board, int[][] goal){
-        return 4*manhattanDistance(board, goal)/3 + linearConflict(board) + cornerTileHeuristic(board, goal);
+        return 4*manhattanDistance(board, goal)/3 + linearConflict(board) + cornerTile(board, goal);
     }
 }
