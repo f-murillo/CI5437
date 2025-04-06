@@ -5,7 +5,7 @@ Alejandro Zambrano - 1710684
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-## Qué es el Connect 6
+## Qué es Connect 6
 
 - __Connect 6__ es un juego de mesa con un tablero con 19 filas y 19 columnas (18X18 casillas), donde a cada jugador le corresponden unas fichas (negras o blancas).
 
