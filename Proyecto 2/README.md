@@ -57,9 +57,7 @@ UCT = {w_i \over {s_i}} + {c\sqrt{ln(s_p) \over s_i}}
 ```
 
 - Donde:
-- ```math
-   w_i = número de simulaciones con victorias para el estado
-  ```
+  - w_i = número de simulaciones con victorias para el estado
   - s_i = total de simulaciones para el estado  
   - s_p = total de simulaciones para el estado padre
   - c = parámetro de exploración. Generalmente se escoge:
