@@ -14,7 +14,7 @@ Alejandro Zambrano - 1710684
 - Siempre comienza el jugador con las __fichas negras__. 
     - En la primera jugada, el jugador debe colocar una ficha negra en cualquier casilla del tablero.
 
-![Ejemplo de Estado Inicial del Juego](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/EstadoInicial2.png)
+![Ejemplo de Estado Inicial del Juego](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/EstadoInicial.png)
 
 - Luego de la primera jugada, el jugador con las fichas blancas debe colocar dos fichas en cualquier parte del tablero.
 
