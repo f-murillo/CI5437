@@ -48,21 +48,24 @@ Alejandro Zambrano - 1710684
 
 MCTS funciona de la siguiente manera:
 
-    - Se parte desde el estado inicial.
+- Se parte desde el estado inicial.
 
-    - A partir de éste, escoge el siguiente nodo a expandir mediante la fórmula Upper Confidence Bound for Trees (UCT):
+- A partir de éste, escoge el siguiente nodo a expandir mediante la fórmula Upper Confidence Bound for Trees (UCT):
 
 ```math
 UCT = w_i \over s_i + c\sqrt{ln(s_p) \over s_i} 
 ```
 
-    - Donde: 
+- Donde: 
         - w_i = número de simulaciones con victorias para el estado
         - s_i = total de simulaciones para el estado  
         - s_p = total de simulaciones para el estado padre
-        - c = parámetro de exploración. Generalmente se escoge ```math c = \sqrt{2}```
+        - c = parámetro de exploración. Generalmente se escoge:
+```math
+c =\sqrt{2} 
+```
 
-    - Si el nodo escogido no ha sido completamente explorado, se agregan los posibles movimientos como hijos en el árbol de búsqueda.
+- Si el nodo escogido no ha sido completamente explorado, se agregan los posibles movimientos como hijos en el árbol de búsqueda.
 
     - Simula una partida desde el nuevo nodo hasta llegar a un estado terminal, siguiendo algunas heurísticas basadas en las reglas del juego. Durante las simulaciones, va estableciendo puntuaciones a los estados. 
 
