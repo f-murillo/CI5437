@@ -7,16 +7,16 @@ Alejandro Zambrano - 1710684
 
 ## Qué es el Connect 6
 
-- __Connect 6__ es un juego de mesa con un tablero 18X18, donde a cada jugador le corresponden unas fichas (negras o blancas).
+- __Connect 6__ es un juego de mesa con un tablero con 19 filas y 19 columnas (18X18 casillas), donde a cada jugador le corresponden unas fichas (negras o blancas).
 
-- El objetivo de cada jugador es colocar sus fichas en las casillas del tablero, de tal forma que conecten 6 o más fichas de su color.
+- El objetivo de cada jugador es colocar sus fichas en las intersecciones de filas y columnas del tablero, de tal forma que conecten 6 o más fichas de su color.
 
 - Siempre comienza el jugador con las __fichas negras__. 
-    - En la primera jugada, el jugador debe colocar una ficha negra en cualquier casilla del tablero.
+    - En la primera jugada, el jugador debe colocar una ficha negra en cualquier intersección del tablero.
 
 ![Ejemplo de Estado Inicial del Juego](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/EstadoInicial.png)
 
-- Luego de la primera jugada, el jugador con las fichas blancas debe colocar dos fichas en cualquier parte del tablero.
+- Luego de la primera jugada, el jugador con las fichas blancas debe colocar dos fichas en cualquier parte.
 
 ![Ejemplo de la Segunda Jugada](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/PrimeraJugadaBlancas.png)
 
