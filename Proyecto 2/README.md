@@ -53,7 +53,7 @@ MCTS funciona de la siguiente manera:
 - A partir de éste, escoge el siguiente nodo a expandir mediante la fórmula Upper Confidence Bound for Trees (UCT):
 
 ```math
-UCT = w_i \over s_i + c\sqrt{ln(s_p) \over s_i} 
+UCT = {w_i \over {s_i} + c\sqrt{ln(s_p) \over s_i}} 
 ```
 
 - Donde: 
