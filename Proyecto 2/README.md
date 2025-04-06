@@ -20,7 +20,7 @@ Alejandro Zambrano - 1710684
 
 ![Ejemplo de la Segunda Jugada](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/PrimeraJugadaBlancas.png)
 
-- Ya después de haber realizado la jugada que comienza el juego, el jugador con negras ya puede colocar dos fichas donde quiera.
+- Ya después de haber realizado la primera jugada, el jugador con negras ya puede colocar dos fichas donde quiera.
 
 ![Ejemplo de la Segunda Jugada de Negras](https://github.com/f-murillo/CI5437/blob/main/Proyecto%202/images/SegundaJugadaNegras.png)
 
