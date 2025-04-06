@@ -88,10 +88,10 @@ UCT = {w_i \over {s_i}} + {c\sqrt{ln(s_p) \over s_i}}
 
 ## Compilación y Ejecución del Programa (teniendo instalado JDK del 17 en adelante)
 
->javac Main.java Connect6Game.java Connect6GUI.java Connect6Board.java Connect6MCTS.java
-
+```
+javac Main.java Connect6Game.java Connect6GUI.java Connect6Board.java Connect6MCTS.java
+```
 ## Ejecución del programa 
-
->java Main <color de fichas de la IA> <tiempo máximo en segundos para la IA>
-
-   
+```
+java Main <color de fichas de la IA> <tiempo máximo en segundos para la IA>
+```
