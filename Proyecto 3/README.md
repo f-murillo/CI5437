@@ -32,15 +32,15 @@ Primero, un poco de contexto:
 
 El problema SAT (Satisfiabilidad Booleana) es fundamental en la teoría de la complejidad computacional y se encuentra dentro de los problemas NP-completos. Se plantea de la siguiente manera:
 
-    - Definición: Dada una fórmula booleana, se quiere saber si existe una asignación de valores de verdad (true o false) a las variables de la fórmula, tal que la fórmula se evalúe true.
+- Dada una fórmula booleana, se quiere saber si __existe una asignación de valores__ de verdad (true o false) a las variables de la fórmula, tal que la fórmula __evalúe a true__.
 
-    - Usualmente se trabaja con fórmulas expresadas en Forma Normal Conjuntiva (CNF). 
+- Usualmente se trabaja con fórmulas expresadas en Forma Normal Conjuntiva (CNF). 
         
-        - Así, cada fórmula es una conjunción (AND) de varias cláusulas, y cada cláusula es una disyunción (OR) de __literales__.
+  - Así, cada fórmula es una conjunción (AND) de varias cláusulas, y cada cláusula es una disyunción (OR) de __literales__.
 
-        - Un __literal__ es una variable booleana o su negación.
+  - Un __literal__ es una variable booleana o su negación.
 
-    - Por ejemplo: sea la fórmula (v₁ ∨ ¬v₂ ∨ v₃) ∧ (¬v₁ ∨ v₂) expresada en CNF. 
+- Por ejemplo: sea la fórmula (v₁ ∨ ¬v₂ ∨ v₃) ∧ (¬v₁ ∨ v₂) expresada en CNF. 
         - En este caso, la primera cláusula se satisface si al menos uno de los literales v₁, ¬v₂ o v₃ es verdadero, y la segunda cláusula debe satisparse con al menos uno de ¬v₁ o v₂.
 
 ----------------------------------------------------------------------------------------------------------------------------
