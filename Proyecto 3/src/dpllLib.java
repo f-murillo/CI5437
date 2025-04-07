@@ -46,11 +46,8 @@ public class dpllLib{
         }
         return null;
     }
-
-    /*
-     * Funcion que encuentra literales puros en la formula. Recordar que:
-     * - Un literal es puro si aparece unicamente con una polaridad (solo positivo o solo negativo)
-     */
+    
+    // Funcion que encuentra literales puros en la formula 
     private static Set<Integer> findPureLiterals(List<List<Integer>> formula){
         Set<Integer> positive = new HashSet<>();
         Set<Integer> negative = new HashSet<>();
@@ -113,12 +110,8 @@ public class dpllLib{
         }
         throw new RuntimeException("No se pudo elegir un literal.");
     }
-
-    /*
-     * Funcion recursiva del algoritmo DPLL. 
-     * Realiza la propagacion unitaria, elimina literales puros, y 
-     * bifurca en base a la asignacion de variables.
-     */
+    
+    //Funcion recursiva del algoritmo DPLL. 
     public static boolean dpll(List<List<Integer>> formula, Map<Integer, Boolean> assignment){
         // Caso base: formula vacia: se han satisfecho todas las clausulas
         if(formula.isEmpty())
