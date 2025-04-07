@@ -179,10 +179,9 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
                 - Las casillas vacías se representan como un "."
 
                 - Ejemplo: ...1.9.........6.34....3.....75.6.....8...3..92..8..14.....1.......7...8.1..4..7.
-             
->[!NOTE]
-> En el archivo "20_instancias_de_sudoku.txt" se encuentran 20 instancias de Sudoku para probar.
 
+                  - En el archivo "20_instancias_de_sudoku.txt" se encuentran 20 instancias de Sudoku para probar.
+                    
         - Pasar la fórmula al algoritmo DPLL realizado en la actividad anterior.
 
         - Obtener la asignación de variables que evalúan a true la fórmula, y traducirla de vuelta a Sudoku.
