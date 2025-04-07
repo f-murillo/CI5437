@@ -10,7 +10,7 @@ Primero, un poco de contexto:
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-## Qué es un Sudoku
+## Qué es Sudoku
 
 - El sudoku es un juego matemático que consta de una cuadrícula 9x9, que se divide en 9 subcuadrículas 3x3. En cada cuadro de la cuadrícula puede ir un número entre 1 y 9.
 
