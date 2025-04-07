@@ -83,7 +83,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
     - __Bifurcación (branching)__:
 
-        - Si la fórmula aún contiene cláusulas sin satisfacer, se __elige un literal arbitrario__ (se puede elegir usando una heurística, pero para el proyecto se decidió escoger el primer literal disponible).
+        - Si la fórmula aún contiene cláusulas sin satisfacer, se __elige un literal arbitrario__ (se puede elegir usando alguna heurística, pero para el proyecto se optó por lo más sencillo, que fue escoger el primer literal disponible).
 
         - Se prueba, en primer lugar, asignando el literal como __verdadero__. Se simplifica la fórmula con esa asignación y se invoca recursivamente a DPLL.
 
