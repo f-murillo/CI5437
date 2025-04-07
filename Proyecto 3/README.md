@@ -41,7 +41,7 @@ El problema SAT (Satisfiabilidad Booleana) es fundamental en la teoría de la co
   - Un __literal__ es una variable booleana o su negación.
 
 - Por ejemplo: sea la fórmula (v₁ ∨ ¬v₂ ∨ v₃) ∧ (¬v₁ ∨ v₂) expresada en CNF. 
-        - En este caso, la primera cláusula se satisface si al menos uno de los literales v₁, ¬v₂ o v₃ es verdadero, y la segunda cláusula debe satisparse con al menos uno de ¬v₁ o v₂.
+  - En este caso, la primera cláusula se satisface si al menos uno de los literales v₁, ¬v₂ o v₃ es verdadero, y la segunda cláusula debe satisparse con al menos uno de ¬v₁ o v₂.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
