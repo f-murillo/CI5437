@@ -30,7 +30,7 @@ Es un problema algo complejo de entender. Así que primero, un poco de contexto:
 
 ## Qué es el problema SAT
 
-El problema SAT (Satisfacibilidad Booleana) es un problema de la l+ogica proposicional. Es importante dentro de la teoría de la complejidad computacional, y se encuentra entre los problemas NP-completos. Se plantea de la siguiente manera:
+El problema SAT (Satisfacibilidad Booleana) es un problema de la lógica proposicional. Es importante dentro de la teoría de la complejidad computacional, y se encuentra entre los problemas NP-completos. Se plantea de la siguiente manera:
 
 - Dada una fórmula booleana, se quiere saber si __existe una asignación de valores__ de verdad (true o false) a las variables de la fórmula, tal que la fórmula __evalúe a true__.
 
