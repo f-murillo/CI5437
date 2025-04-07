@@ -103,7 +103,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
 ## Cómo se usa DPLL para resolver el Sudoku
 
-- Lo interesante del algoritmo DPLL, y de cualquier algoritmo que resuelva el problema SAT, es que, si podemos transformar un problema a un problema de tipo SAT, estos algoritmos lo pueden resolver, __sin necesidad de ser adaptados__ al problema original que se quiere resolver.
+- Lo interesante del algoritmo DPLL, y de cualquier algoritmo que resuelva el problema SAT, es que, si podemos transformar un problema a uno de tipo SAT, estos algoritmos lo pueden resolver, __sin necesidad de ser adaptados__ al problema original que se quiere resolver.
 
 - Para el caso del Sudoku, la idea es la siguiente:
 
