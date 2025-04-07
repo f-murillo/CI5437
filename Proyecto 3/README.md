@@ -61,7 +61,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
         - Fórmula vacía: Si todas las cláusulas han sido satisfechas (es decir, se han eliminado de la fórmula) significa que existe una asignación válida.
 
-        - Cláusula vacía: Si alguna cláusula queda vacía, quiere decir que se ha producido un conflicto (ninguna asignación posible puede satisfacer esa cláusula) y se retrocede.
+        - Cláusula vacía: Si alguna cláusula queda vacía, quiere decir que se ha producido un conflicto (ninguna asignación posible puede satisfacer esa cláusula).
 
     - __Propagación unitaria__:
 
