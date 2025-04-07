@@ -29,7 +29,7 @@ public class sudokuSolver{
         if(isSat){
             String solution = sudokuSAT.decodeSudokuSolution(assignment);
             System.out.println(solution);
-        }else{
+        } else{
             System.out.println("No se encontro solucion para la instancia de Sudoku.");
         }
         System.out.println("Tiempo de resolucion: " + elapsedSeconds + " segundos");
