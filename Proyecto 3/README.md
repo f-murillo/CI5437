@@ -6,7 +6,7 @@ Franco Murillo - 1610782
 
 El objetivo del proyecto es el de transformar el problema del Sudoku a fórmulas lógicas para ser resueltos mediante un resolvedor de problemas lógicos SAT, para posteriormente transformar la solución obtenida a Sudoku, obteniendo la solución del tablero.  
 
-Primero, un poco de contexto:
+Es un problema algo complejo de entender. Así que primero, un poco de contexto:
 
 ----------------------------------------------------------------------------------------------------------------------------
 
