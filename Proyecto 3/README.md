@@ -53,7 +53,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
 ### Algoritmo DPLL
 
-- Es un __algoritmo completo__, basado en __bactracking__, que verifica si una fórmula de lógica proposicional en una forma CNF es o no satisfacible, es decir, si existe o no alguna asignación de variables que hacen que la fórmula evalúe a true.
+- Es un __algoritmo completo__, basado en __bactracking__, que verifica si una fórmula de lógica proposicional (en una forma CNF) es o no satisfacible, es decir, si existe o no alguna asignación de variables que hacen que la fórmula evalúe a true.
 
 - Funciona de la siguiente manera:
 
