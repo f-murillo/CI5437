@@ -50,7 +50,7 @@ public class sudokuSAT{
             }
         }
 
-        // 3. Restricciones de fila:
+        // 3. Restricciones de fila
         //  a) Cada digito aparece al menos una vez en cada fila.
         for(int i = 1; i <= 9; i++){
             for(int d = 1; d <= 9; d++){
@@ -75,7 +75,7 @@ public class sudokuSAT{
             }
         }
 
-        // 4. Restricciones de columna:
+        // 4. Restricciones de columna
         // a) Cada digito aparece al menos una vez en cada columna.
         for(int j = 1; j <= 9; j++){
             for(int d = 1; d <= 9; d++){
@@ -100,7 +100,7 @@ public class sudokuSAT{
             }
         }
 
-        // 5. Restricciones de bloque 3x3:
+        // 5. Restricciones de bloque 3x3
         // a) Cada digito aparece al menos una vez en cada bloque.
         for(int blockRow = 0; blockRow < 3; blockRow++){
             for(int blockCol = 0; blockCol < 3; blockCol++){
