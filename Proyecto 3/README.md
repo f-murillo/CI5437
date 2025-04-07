@@ -186,7 +186,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
             - Por ejemplo, la solución para la instancia mostrada antes sería: 735169482281754693469823751347516829158492367926387514872631945694275138513948276
 
-- El proyecto consta de __4 archivos__:
+- El proyecto tiene __4 archivos__:
 
     - __dpllLib.java__
 
