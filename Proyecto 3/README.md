@@ -16,7 +16,7 @@ Primero, un poco de contexto:
 
 - En un inicio, la cuadrícula se encuentra parcialmente vacía, con algunos números ingresados:
 
-![Estado Inicial de Sudoku](https://es.wikipedia.org/wiki/Sudoku#/media/Archivo:Sudoku-by-L2G-20050714.svg)
+![Estado Inicial de Sudoku](https://github.com/f-murillo/CI5437/blob/main/Proyecto%203/images/Estado%20inicial.png)
 
 - El objetivo es rellenar el resto de la cuadrícula de tal forma que:
 
@@ -24,7 +24,7 @@ Primero, un poco de contexto:
     - En cada cuadro de cada columna haya un número distinto.
     - En cada cuadro de cada subcuadrícula 3x3 haya un número distinto.
 
-![Estado Final de Sudoku](https://es.wikipedia.org/wiki/Sudoku#/media/Archivo:Sudoku_resuelto_completo.png)
+![Estado Final de Sudoku](https://github.com/f-murillo/CI5437/blob/main/Proyecto%203/images/Estado%20final.png)
 
 ----------------------------------------------------------------------------------------------------------------------------
 
