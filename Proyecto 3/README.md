@@ -30,7 +30,7 @@ Primero, un poco de contexto:
 
 ## Qué es el problema SAT
 
-El problema SAT (Satisfiabilidad Booleana) es fundamental en la teoría de la complejidad computacional y se encuentra dentro de los problemas NP-completos. Se plantea de la siguiente manera:
+El problema SAT (Satisfacibilidad Booleana) es fundamental en la teoría de la complejidad computacional y se encuentra dentro de los problemas NP-completos. Se plantea de la siguiente manera:
 
 - Dada una fórmula booleana, se quiere saber si __existe una asignación de valores__ de verdad (true o false) a las variables de la fórmula, tal que la fórmula __evalúe a true__.
 
@@ -178,7 +178,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
                 - Las casillas vacías se representan como un "."
 
-                - Por ejemplo: ...1.9.........6.34....3.....75.6.....8...3..92..8..14.....1.......7...8.1..4..7.
+                - Ejemplo: ...1.9.........6.34....3.....75.6.....8...3..92..8..14.....1.......7...8.1..4..7.
 
         - Pasar la fórmula al algoritmo DPLL realizado en la actividad anterior.
 
