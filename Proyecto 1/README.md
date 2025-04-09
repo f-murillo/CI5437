@@ -21,8 +21,6 @@ Alejandro Zambrano - 1710684
 
 - El proyecto fue realizado en **Java**.
 
-- Se modularizó el código con respecto al código entregado, para una mejor comprehensión y una mayor facilidad para su implementación.
-
 - El programa pide al usuario ingresar una secuencia de 16 números, del 0 al 15, separadas por un espacio.
 
 - Se asume que la secuencia ingresada es correcta.
