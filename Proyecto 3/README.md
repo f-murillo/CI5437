@@ -184,7 +184,7 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
                     
         - Pasar la fórmula al algoritmo DPLL realizado en la actividad anterior.
 
-        - Obtener la asignación de variables que evalúan a true la fórmula, y traducirla de vuelta a Sudoku.
+        - Obtener la asignación de variables para la cual la fórmula evalúan a true, y traducirla de vuelta a Sudoku.
 
             - Por ejemplo, la solución para la instancia mostrada antes sería: 735169482281754693469823751347516829158492367926387514872631945694275138513948276
 
