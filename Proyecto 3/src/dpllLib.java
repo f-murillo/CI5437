@@ -128,9 +128,8 @@ public class dpllLib{
         while(unitLiteral != null){
             assignment.put(Math.abs(unitLiteral), unitLiteral > 0);
             formula = simplifyFormula(formula, unitLiteral);
-            if(formula == null){
+            if(formula == null)
                 return false;
-            }
             // Se vuelve a comprobar si la formula quedo vacia y si existe alguna clausula vacia
             if(formula.isEmpty())
                 return true;
