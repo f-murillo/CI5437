@@ -20,7 +20,7 @@ public class Main{
         Puzzle puzzle = new Puzzle(initialBoard);
         IDAStar solver = new IDAStar(puzzle.getGoalBoard());
 
-        if(!solver.solve(puzzle)) // Si no se logro encontrar solucion
+        if(!solver.solve(puzzle)) // Si no se logro encontrar una solucion
             System.out.println("No hay solucion para el puzzle.");
         
         scanner.close();
