@@ -1,3 +1,4 @@
+// Este archivo tiene el metodo principal que verifica si una formula booleana es o no satisfacible
 import java.io.*;
 import java.util.HashMap;
 import java.util.List;
