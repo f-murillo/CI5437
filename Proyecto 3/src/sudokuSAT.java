@@ -1,3 +1,4 @@
+// Este archivo contiene la logica que traduce una instancia Sudoku en un problema SAT en forma CNF
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
