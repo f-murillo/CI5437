@@ -23,14 +23,15 @@ public class dpllSolver{
             long endTime = System.nanoTime();
             // Terminamos de tomar el tiempo
             double elapsedSeconds = (endTime - startTime) / 1_000_000_000.0;
-
+            
+            // Se muestra el resultado
             if(isSatisfiable) 
                 System.out.println("SATISFIABLE");
             else 
                 System.out.println("UNSATISFIABLE");
             System.out.println("Tiempo de resolucion: " + elapsedSeconds + " segundos");
 
-        }catch(IOException e){
+        } catch(IOException e){
             System.out.println("Error al leer el archivo: " + e.getMessage());
             e.printStackTrace();
         }
