@@ -1,9 +1,10 @@
+// Este archivo contiene las funciones que resuelven el problema SAT usando el algoritmo DPLL
 import java.io.*;
 import java.util.*;
 
 public class dpllLib{
     /*
-     * Funcion que realiza el parseo de un archivo DIMACS simplificado
+     * Funcion que realiza el parseo de un archivo DIMACS simplificado para obtener una formula booleana
      * Se asume que cada clausula finaliza con un 0
      */
     public static List<List<Integer>> parseDimacs(File file) throws IOException{
