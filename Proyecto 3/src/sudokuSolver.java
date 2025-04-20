@@ -1,3 +1,7 @@
+/*
+   Este archivo contiene el metodo principal que obtiene la solucion de un tablero Sudoku
+   transformandolo a un problema SAT
+*/ 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
