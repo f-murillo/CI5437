@@ -6,7 +6,6 @@ public class Connect6GUI extends JFrame{
     private Color humanColor; // Color para las fichas del humano
     private Color aiColor; // Color para las fichas de la IA
 
-    
     public Color getHumanColor(){
         return humanColor;
     }
