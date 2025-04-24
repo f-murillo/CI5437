@@ -103,7 +103,7 @@ public class dpllLib{
         return newFormula;
     }
 
-    //Funcion que selecciona un literal para bifurcar. Se escoge el primer literal que aparece. 
+    //Funcion que selecciona un literal para bifurcar. Se escoge el primer literal que aparece
     private static int chooseLiteral(List<List<Integer>> formula){
         for(List<Integer> clause : formula){
             if(!clause.isEmpty()) 
@@ -112,13 +112,13 @@ public class dpllLib{
         throw new RuntimeException("No se pudo elegir un literal.");
     }
     
-    //Funcion recursiva del algoritmo DPLL. 
+    //Funcion recursiva del algoritmo DPLL
     public static boolean dpll(List<List<Integer>> formula, Map<Integer, Boolean> assignment){
         // Caso base: formula vacia: se han satisfecho todas las clausulas
         if(formula.isEmpty())
             return true;
         
-        // Si existe alguna clausula vacia, se ha llegado a un conflicto.
+        // Si existe alguna clausula vacia, se ha llegado a un conflicto
         for(List<Integer> clause : formula){
             if(clause.isEmpty())
                 return false;
