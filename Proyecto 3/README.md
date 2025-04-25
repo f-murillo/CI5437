@@ -36,7 +36,7 @@ El problema SAT (Satisfacibilidad Booleana) es un problema de lógica proposicio
 
 - Usualmente se trabaja con fórmulas expresadas en Forma Normal Conjuntiva (CNF). 
         
-  - Así, cada fórmula es una conjunción (AND) de varias cláusulas, y cada cláusula es una disyunción (OR) de __literales__.
+  - Donde cada fórmula es una conjunción (AND) de varias cláusulas, y cada cláusula es una disyunción (OR) de __literales__.
 
   - Un __literal__ es una variable booleana o su negación.
 
