@@ -106,6 +106,8 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
 
 - Lo interesante del algoritmo DPLL, y de cualquier algoritmo que resuelva el problema SAT, es que, si podemos transformar un problema cualquiera a uno de tipo SAT, estos algoritmos lo pueden resolver, __sin necesidad de ser adaptados__ al problema original que se quiere resolver.
 
+- Así, ya teniendo un solver para SAT, la dificultad está en la __traducción de los problemas a SAT__, y la __traducción de la solución obtenida__.
+
 - Para el caso del Sudoku, la idea es la siguiente:
 
     - Dada una instancia de Sudoku (un tablero), se debe "traducir" la instancia a una fórmula lógica en CNF.
@@ -113,9 +115,6 @@ Existen varias formas de resolver el problema SAT, pero en este proyecto se enfo
     - Ya con la fórmula en CNF, se aplica el algoritmo DPLL para obtener la asignación para la cual la fórmula evalúa a true.
 
     - Teniendo la asignación de variables, se "traduce" de vuelta a la instancia Sudoku, obteniendo así la solución del tablero.
-
-- Así, ya teniendo el solver para SAT, la dificultad está en la __traducción de los problemas a SAT__, y la __traducción de la solución obtenida__.
-
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Cómo se traduce de Sudoku a CNF
