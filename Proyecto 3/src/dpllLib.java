@@ -80,7 +80,7 @@ public class dpllLib{
     /*
      * Funcion que simplifica la formula aplicando la asignacion del literal.
      * Elimina de la formula las clausulas que se satisfacen con el literal,
-     * y remueve el literal opuesto en las clausulas donde aparezca.
+     * y remueve el literal opuesto en las clausulas donde aparezca
      */
     private static List<List<Integer>> simplifyFormula(List<List<Integer>> formula, int literal){
         List<List<Integer>> newFormula = new ArrayList<>();
@@ -95,7 +95,7 @@ public class dpllLib{
                     continue;  // Se elimina el literal opuesto
                 newClause.add(lit);
             }
-            // Si la clausula quedo vacia tras la eliminacion, hay conflicto.
+            // Si la clausula quedo vacia tras la eliminacion, hay conflicto
             if(newClause.isEmpty())
                 return null;
             newFormula.add(newClause);
