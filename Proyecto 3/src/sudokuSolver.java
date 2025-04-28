@@ -21,8 +21,7 @@ public class sudokuSolver{
         // Se convierte la instancia de Sudoku a una formula CNF.
         List<List<Integer>> cnf = sudokuSAT.sudokuToCNF(sudokuInstance);
         
-        // Se invoca el SAT solver (DPLL) con la CNF obtenida.
-        Map<Integer, Boolean> assignment = new HashMap<>();
+        Map<Integer, Boolean> assignment = new HashMap<>(); // Para obtener la asignacion de variables
         // Tomamos el tiempo de ejecucion
         long startTime = System.nanoTime();
         boolean isSat = dpllLib.dpll(cnf, assignment); // Se llama al solver DPLL
