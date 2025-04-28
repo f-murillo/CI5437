@@ -52,7 +52,7 @@ public class sudokuSAT{
         }
 
         // 3. Restricciones de fila
-        //  a) Cada digito aparece al menos una vez en cada fila.
+        //  a) Cada digito aparece al menos una vez en cada fila
         for(int i = 1; i <= 9; i++){
             for(int d = 1; d <= 9; d++){
                 List<Integer> clause = new ArrayList<>();
@@ -62,7 +62,7 @@ public class sudokuSAT{
                 clauses.add(clause);
             }
         }
-        // b) Cada digito no se repite en la misma fila: para cada par de columnas distintas.
+        // b) Cada digito no se repite en la misma fila: para cada par de columnas distintas
         for(int i = 1; i <= 9; i++){
             for(int d = 1; d <= 9; d++){
                 for(int j = 1; j <= 9; j++){
@@ -77,7 +77,7 @@ public class sudokuSAT{
         }
 
         // 4. Restricciones de columna
-        // a) Cada digito aparece al menos una vez en cada columna.
+        // a) Cada digito aparece al menos una vez en cada columna
         for(int j = 1; j <= 9; j++){
             for(int d = 1; d <= 9; d++){
                 List<Integer> clause = new ArrayList<>();
@@ -87,7 +87,7 @@ public class sudokuSAT{
                 clauses.add(clause);
             }
         }
-        // b) Cada digito no se repite en la misma columna: para cada par de filas distintas.
+        // b) Cada digito no se repite en la misma columna: para cada par de filas distintas
         for(int j = 1; j <= 9; j++){
             for(int d = 1; d <= 9; d++){
                 for(int i = 1; i <= 9; i++){
@@ -102,7 +102,7 @@ public class sudokuSAT{
         }
 
         // 5. Restricciones de bloque 3x3
-        // a) Cada digito aparece al menos una vez en cada bloque.
+        // a) Cada digito aparece al menos una vez en cada bloque
         for(int blockRow = 0; blockRow < 3; blockRow++){
             for(int blockCol = 0; blockCol < 3; blockCol++){
                 for(int d = 1; d <= 9; d++){
@@ -118,7 +118,7 @@ public class sudokuSAT{
                 }
             }
         }
-        // b) Cada digito no se repite en cada bloque: para cada par de celdas distintas en el bloque.
+        // b) Cada digito no se repite en cada bloque: para cada par de celdas distintas en el bloque
         for(int blockRow = 0; blockRow < 3; blockRow++){
             for(int blockCol = 0; blockCol < 3; blockCol++){
                 for(int d = 1; d <= 9; d++){
@@ -144,7 +144,7 @@ public class sudokuSAT{
             }
         }
 
-        // Agregamos las pistas (clausulas unitarias) de la instancia de Sudoku.
+        // Agregamos las pistas (clausulas unitarias) de la instancia de Sudoku
         for(int i = 0; i < 81; i++){
             char ch = sudokuInstance.charAt(i);
             if(ch != '.' && ch != '0'){
@@ -161,7 +161,7 @@ public class sudokuSAT{
 
     /*
      * Funcion que decodifica una asignacion encontrada por DPLL y retorna la solucion
-     * del Sudoku como un string de 81 digitos (fila a fila).
+     * del Sudoku como un string de 81 digitos (fila a fila)
      */
     public static String decodeSudokuSolution(Map<Integer, Boolean> assignment){
         StringBuilder sb = new StringBuilder();
