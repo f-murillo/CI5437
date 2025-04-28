@@ -18,7 +18,7 @@ public class sudokuSolver{
             System.exit(1);
         }
         
-        // Se convierte la instancia de Sudoku a una formula CNF.
+        // Se convierte la instancia de Sudoku a una formula CNF
         List<List<Integer>> cnf = sudokuSAT.sudokuToCNF(sudokuInstance);
         
         Map<Integer, Boolean> assignment = new HashMap<>(); // Para obtener la asignacion de variables
@@ -28,7 +28,7 @@ public class sudokuSolver{
         long endTime = System.nanoTime();
         double elapsedSeconds = (endTime - startTime) / 1_000_000_000.0;
         
-        // Se decodifica y muestra el resultado.
+        // Se decodifica y muestra el resultado
         if(isSat){
             String solution = sudokuSAT.decodeSudokuSolution(assignment);
             System.out.println(solution);
