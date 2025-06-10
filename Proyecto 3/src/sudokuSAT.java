@@ -9,7 +9,6 @@ public class sudokuSAT{
     /*
      * Funcion que asigna un numero unico a la variable correspondiente a la celda (i,j) 
      * con el digito d
-     * Usamos la convencion: v(i,j,d) = 100*i + 10*j + d, donde i, j, d estan entre 1 y 9
      */
     public static int var(int i, int j, int d){
         return 100 * i + 10 * j + d;
