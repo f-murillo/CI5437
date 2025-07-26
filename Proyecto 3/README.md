@@ -1,4 +1,4 @@
-# Resolvedor de Sudoku con SAT
+# Solver de Sudoku con SAT
 
 Franco Murillo - 1610782
 
