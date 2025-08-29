@@ -7,8 +7,8 @@ public class Heuristica{
         for(int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
                 int value = board[i][j]; // Casilla actual
-                if(value != 0){ // Si la casilla no es el espacio en blanco
-                    // Se calcula la distancia entre la casilla actual y la casilla objetivo
+                if(value != 0){ // Si la casilla no es el espacio en blanco 
+                    // distancia entre la casilla actual y la casilla objetivo
                     int goalRow = (value - 1) / 4;
                     int goalCol = (value - 1) % 4;
                     distance += Math.abs(i - goalRow) + Math.abs(j - goalCol);
@@ -73,8 +73,9 @@ public class Heuristica{
         return heuristic;
     }
         
-    // Funcion que retorna la formula Hybride Heuristic (HH) (modficada, se cambio wd por ct, y se multiplico md por 4) 
+    // Funcion que retorna la formula Hybride Heuristic (HH)  
     public static int hybridHeuristic(int[][] board, int[][] goal){
         return 4*manhattanDistance(board, goal)/3 + linearConflict(board) + cornerTile(board, goal);
     }
 }
+
