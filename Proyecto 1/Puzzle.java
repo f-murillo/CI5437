@@ -1,5 +1,5 @@
 // Este archivo contiene la logica del 15-puzzle
-// Crea el tablero, obtiene los estados, realiza los movimientos para obtener estados vecinos, y copia estados
+// Aquí se crea el tablero, se obtiene los estados, se realiza los movimientos para obtener estados vecinos, y se copia estados
 /* Es posible adaptar el archivo para tener un solver para el N-Puzzle. Hay que tener en cuenta que se tendría que 
     cambiar la longitud de la secuencia a pedir al usuario; y dependiendo del N, se tendria que considerar modificar
     o no las heuristicas
@@ -110,3 +110,4 @@ public class Puzzle{
         return newBoard;
     }
 }
+
