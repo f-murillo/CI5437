@@ -46,12 +46,12 @@ public class IDAStar{
         int min = Integer.MAX_VALUE; // Para compararlo con los valores de f de los estados vecinos
         PriorityQueue<Puzzle> neighbors = puzzle.getNeighbors(goalBoard); // Estados vecinos
     
-        while(!neighbors.isEmpty()){ // Mientras la cola de vecinos no este vacia
-            Puzzle neighbor = neighbors.poll(); // Se desencola el primer vecino (que por como se definio la cola, es la de menor heuristica)
+        while(!neighbors.isEmpty()){
+            Puzzle neighbor = neighbors.poll(); // desencolamos el primer vecino (por como se definio la cola, es la de menor heuristica)
             String neighborString = Arrays.deepToString(neighbor.getBoard()); // Se transforma el tablero a String
             
             if(!visited.contains(neighborString)){ // Si el estado no ha sido visitado
-                generatedStates++; // Se aumenta el numero de estados generados
+                generatedStates++;
                 int temp = dfs(neighbor, g + 1, limit); // Llamada recursiva
                 // Si el  valor de retorno es -1, se encontro la solucion. Retorna -1 a solve
                 if(temp == -1) 
@@ -68,8 +68,8 @@ public class IDAStar{
     
     // Metodo que imprime la solucion
     private void printSolution(Puzzle puzzle, int steps){
-        List<int[][]> solutionPath = new ArrayList<>(); // Lista que contendra los estados de la solucion
-        while(puzzle != null){ // Mientras el tablero actual no sea nulo
+        List<int[][]> solutionPath = new ArrayList<>(); 
+        while(puzzle != null){ 
             // Se agrega a la lista el tablero actual, y se pasa al tablero padre (al predecesor)
             solutionPath.add(puzzle.getBoard()); 
             puzzle = puzzle.getParent();
@@ -93,3 +93,4 @@ public class IDAStar{
         }
     }
 }
+
