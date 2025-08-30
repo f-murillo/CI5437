@@ -88,7 +88,7 @@ public class Puzzle{
             int newCol = blankCol + colMoves[k];
             if(newRow >= 0 && newRow < 4 && newCol >= 0 && newCol < 4){ // Si la fila y columna calculadas estan en el rango de la matriz
                 int[][] newBoard = copyBoard(); // Se copia el tablero actual
-                // Se hace el intercambio entre la casilla a mover y el espacio en blanco
+                // Intercambio entre la casilla a mover y el espacio en blanco
                 newBoard[blankRow][blankCol] = newBoard[newRow][newCol];
                 newBoard[newRow][newCol] = 0;
                 // Se crea el tablero con el movimiento hecho y se agrega a la cola de vecinos
@@ -110,4 +110,3 @@ public class Puzzle{
         return newBoard;
     }
 }
-
