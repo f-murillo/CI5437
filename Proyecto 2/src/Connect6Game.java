@@ -1,18 +1,18 @@
 import javax.swing.SwingUtilities;
 
 public class Connect6Game{
-    private Connect6Board gameBoard; // Estado lógico del tablero
+    private Connect6Board gameBoard; // Estado logico del tablero
     private Connect6MCTS ai; // Algoritmo MCTS
-    private Connect6GUI gui; // Interfaz gráfica
+    private Connect6GUI gui; // Interfaz grafica
     private int humanMoveCount = 0; 
-    private int[][] humanMoves = new int[2][2]; // Fichas colocadas por el usuario
+    private int[][] humanMoves = new int[2][2]; // Fichas colocadas por el humano
     private char aiPlayer; 
     private char humanPlayer; 
     private boolean isFirstMove = true;
 
     // Constructor
     public Connect6Game(String aiColor, long timeLimitMillis){
-        // Se asigna las fichas de la IA y del humano segun el color seleccionado
+        // Fichas de la IA y del humano segun el color seleccionado
         if (aiColor.equalsIgnoreCase("negras")){
             aiPlayer = 'B';
             humanPlayer = 'W';
@@ -103,3 +103,4 @@ public class Connect6Game{
     }
 
 }
+
