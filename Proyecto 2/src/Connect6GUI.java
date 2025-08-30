@@ -122,7 +122,7 @@ public class Connect6GUI extends JFrame{
                         btn.setContentAreaFilled(true);
                         btn.setBackground(color);
                         btn.setEnabled(false);
-                        boardPanel.repaint(); // Fuerza la actualizacion del tablero
+                        boardPanel.repaint(); // Esto fuerza la actualizacion del tablero
                         break;
                     }
                 }
@@ -136,3 +136,4 @@ public class Connect6GUI extends JFrame{
     }
 
 }
+
