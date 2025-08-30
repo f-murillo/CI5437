@@ -20,8 +20,9 @@ public class Connect6MCTS{
 
     // Clase para los pares (movimiento, puntuacion) (se usara para determinar las jugadas "priorizadas")
     private class ScoredMove{
-        int[] move; // Coordenadas del movimiento
-        double score; // Puntuacion del movimiento
+        // Coordenadas y puntuacion del movimiento
+        int[] move; 
+        double score; 
         // Constructor
         ScoredMove(int[] move, double score){
             this.move = move;
@@ -55,13 +56,13 @@ public class Connect6MCTS{
             if(prioritizedMoves.size() < 2) break;
         
             // Se seleccionan los dos movimientos con mayor prioridad
-            int[] move1 = prioritizedMoves.get(0); // El mejor movimiento
-            int[] move2 = prioritizedMoves.get(1); // El segundo mejor movimiento
+            int[] move1 = prioritizedMoves.get(0); // Mejor movimiento
+            int[] move2 = prioritizedMoves.get(1); // Segundo mejor movimiento
         
-            // Se realiza los movimientos en el tablero temporal
+            // Se realizan los movimientos en el tablero temporal
             tempState.makeMove(move1, move2, currentPlayer);
         }
-        // Retorna la evaluacion sobre el estado generado
+        // Retornamos la evaluacion sobre el estado generado
         return evaluate(tempState);
     }
     //  Funcion que propaga los resultados obtenidos durante una simulacion hacia arriba en el arbol de busqueda
@@ -76,7 +77,7 @@ public class Connect6MCTS{
     // Funcion que da valor al hecho de si un estado tiene fichas en el centro
     private double proximityToCenter(int row, int col){
         int center = 19 / 2;
-        int distance = Math.abs(center - row) + Math.abs(center - col); // Distancia Manhattan
+        int distance = Math.abs(center - row) + Math.abs(center - col);
         return 10 / (1 + distance); 
     }
 
@@ -94,15 +95,15 @@ public class Connect6MCTS{
                 aiScore += evaluateLine(board, row, col, 0, 1, 'B', 'W'); // Vertical
                 aiScore += evaluateLine(board, row, col, 1, 1, 'B', 'W'); // Diagonal principal
                 aiScore += evaluateLine(board, row, col, 1, -1, 'B', 'W'); // Diagonal secundaria
-                // Para el usuario
-                opponentScore += evaluateLine(board, row, col, 1, 0, 'W', 'B'); // Horizontal
-                opponentScore += evaluateLine(board, row, col, 0, 1, 'W', 'B'); // Vertical
-                opponentScore += evaluateLine(board, row, col, 1, 1, 'W', 'B'); // Diagonal principal
-                opponentScore += evaluateLine(board, row, col, 1, -1, 'W', 'B'); // Diagonal secundaria
+                // Para el usuario (igual que con la IA, pero con los colores cambiados xd)
+                opponentScore += evaluateLine(board, row, col, 1, 0, 'W', 'B'); 
+                opponentScore += evaluateLine(board, row, col, 0, 1, 'W', 'B'); 
+                opponentScore += evaluateLine(board, row, col, 1, 1, 'W', 'B'); 
+                opponentScore += evaluateLine(board, row, col, 1, -1, 'W', 'B');
             }
         }
     
-        // Se combina las puntuaciones de ataque y defensa
+        // Combinamos las puntuaciones de ataque y defensa
         return aiScore - opponentScore;
     }
     
@@ -222,7 +223,7 @@ public class Connect6MCTS{
             
         // Se crea la lista priorizada
         List<int[]> prioritizedMoves = new java.util.ArrayList<>();
-        while(!pq.isEmpty()){ // Mientras la cola no esta vacia, desencola los elementos y los agrega a la lista
+        while(!pq.isEmpty()){ 
             prioritizedMoves.add(pq.poll().move);
         }
         return prioritizedMoves;
@@ -230,8 +231,8 @@ public class Connect6MCTS{
     
     // Funcion que expande a otros nodos
     private void expansion(Node node, char currentPlayer){
-        List<int[]> moves = node.state.getAvailableMoves(); // Movimuientos posibles
-            moves = prioritizeMoves(moves, node.state); // Prioridades
+        List<int[]> moves = node.state.getAvailableMoves(); // Movimientos posibles
+        moves = prioritizeMoves(moves, node.state); // Prioridades
         
         int limit = 1000000000; // Limite de nodos explorados
         int count = 0; // Contador
@@ -241,10 +242,10 @@ public class Connect6MCTS{
                 if(count >= limit) return; // Se detiene la expansion despues de alcanzar el limite
                     
                 Connect6Board newState = node.state.clone(); // Se clona el estado actual
-                newState.makeMove(moves.get(i), moves.get(j), currentPlayer); // Se realiza el movimiento sobre el estado clonado
-                // Evalamos el estado
+                newState.makeMove(moves.get(i), moves.get(j), currentPlayer); // Aplicamos el movimiento sobre el estado clonado
+                // Evaluamos el estado
                 double moveScore = evaluate(newState);
-                if(moveScore > 0){ // Solo expande para estados de evaluaciones positiva (poda)
+                if(moveScore > 0){ // Solo expande para estados de evaluaciones positiva (podamos el arbol)
                     Node child = new Node(newState);
                     child.parent = node;
                     node.children.add(child);
@@ -254,7 +255,7 @@ public class Connect6MCTS{
         }
     }
 
-    // Funcion que determina que movimientos bloquena a los movimientos del oponente 
+    // Funcion que determina que movimientos bloquean a los movimientos del oponente 
     private int[][] findBlockingMoves(Connect6Board board, char opponent, char aiPlayer){
         List<int[]> moves = board.getAvailableMoves();
         int bestThreatLevel = 0;
@@ -282,14 +283,14 @@ public class Connect6MCTS{
         char currentPlayer = board.getCurrentPlayer();
         char opponent = (currentPlayer == 'B') ? 'W' : 'B';
 
-        // S verifica si la IA puede ganar en este turno
+        // Se verifica si la IA puede ganar en este turno
         List<int[]> availableMoves = board.getAvailableMoves();
         for(int i = 0; i < availableMoves.size(); i++){
             for(int j = i + 1; j < availableMoves.size(); j++){
                 int[] move1 = availableMoves.get(i);
                 int[] move2 = availableMoves.get(j);
 
-                // Simula los movimientos
+                // Simulamos los movimientos
                 Connect6Board testBoard = board.clone();
                 testBoard.makeMove(move1, move2, currentPlayer);
                 if(testBoard.isWinner(currentPlayer)){
@@ -318,3 +319,4 @@ public class Connect6MCTS{
         return bestChild(root, Math.sqrt(2)).state.getLastMoves();
     }   
 }
+
