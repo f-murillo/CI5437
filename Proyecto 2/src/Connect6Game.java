@@ -4,11 +4,11 @@ public class Connect6Game{
     private Connect6Board gameBoard; // Estado lógico del tablero
     private Connect6MCTS ai; // Algoritmo MCTS
     private Connect6GUI gui; // Interfaz gráfica
-    private int humanMoveCount = 0; // Contador de los movimientos del humano
+    private int humanMoveCount = 0; 
     private int[][] humanMoves = new int[2][2]; // Fichas colocadas por el usuario
-    private char aiPlayer; // Fichas de la IA ('B' o 'W')
-    private char humanPlayer; // Fichas del usuario ('B' o 'W')
-    private boolean isFirstMove = true; // Indicador de si se esta en la primera jugada
+    private char aiPlayer; 
+    private char humanPlayer; 
+    private boolean isFirstMove = true;
 
     // Constructor
     public Connect6Game(String aiColor, long timeLimitMillis){
@@ -46,12 +46,12 @@ public class Connect6Game{
     
                 isFirstMove = false;
     
-                // Se usa SwingUtilities para asegurarse de que la GUI se actualice antes de pasar a la IA
+                // Para asegurarse de que la GUI se actualice antes de pasar a la IA
                 SwingUtilities.invokeLater(() -> handleAIMove());
                 return;
             }
     
-            // Se manejan los movimientos regulares (dos fichas)
+            // Movimientos regulares (dos fichas)
             humanMoves[humanMoveCount] = new int[]{row, col};
             humanMoveCount++;
     
@@ -63,7 +63,7 @@ public class Connect6Game{
                 gameBoard.makeMove(humanMoves[0], humanMoves[1], humanPlayer);
                 humanMoveCount = 0;
     
-                // Verifica si el humano ganó
+                // Si el humano gano
                 if (gameBoard.isWinner(humanPlayer)){
                     gui.showMessage("Ganaste!");
                     return;
@@ -96,9 +96,10 @@ public class Connect6Game{
                     gui.updateButton(aiMoves[1], gui.getAIColor());
             }
 
-            // Verifica si la IA ganó
+            // Si la IA gano
             if (gameBoard.isWinner(aiPlayer)) 
                 gui.showMessage("La IA gano!");
         }
     }
+
 }
